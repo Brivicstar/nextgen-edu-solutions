@@ -67,3 +67,23 @@ footer {
   padding: 1rem;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Segoe UI', sans
