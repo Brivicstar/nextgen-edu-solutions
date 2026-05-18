@@ -1,64 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You - NextGen Edu Solutions</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Edu Solutions | Transforming Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <img src="assets/logo.jpg" alt="NextGen Edu Solutions Logo" class="site-logo">
-    <h1 class="brand-name">NextGen Edu Solutions</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section id="hero">
-    <h2>Transforming Education One School at a Time</h2>
-    <p>Professional support for schools, educators, and institutions to thrive.</p>
-    <a href="#contact" class="cta-button">Book a Consultation</a>
-    <ul>
-      <li>School Management & Operations</li>
-      <li>Staff Training & Development</li>
-      <li>Curriculum Planning & Academic Coaching</li>
-      <li>Financial & Strategic Consulting</li>
-      <li>Parents Engagement Models</li>
-      <li>Digital Branding & School Website Setup</li>
-    </ul>
-  </section>
 
-  <section id="about">
-    <h3>About Us</h3>
-    <p>
-      We are a team of seasoned educators and consultants with over 20 years of hands-on experience
-      helping schools grow, improve outcomes, and strengthen management systems.
-    </p>
-  </section>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.jpg" alt="NextGen Edu Logo" class="logo-img">
+                <span class="logo-text">NextGen <span class="accent-text">Edu</span></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+            </nav>
+        </div>
+    </header>
 
-  <section id="contact">
-    <h3>Contact Us</h3>
-    <div class="contact-section">
-      <h2>Get in Touch</h2>
-      <p>Request a service or consultation. We'd love to hear from you!</p>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" name="name" required placeholder="Your Name" />
-        <input type="email" name="email" required placeholder="Your Email" />
-        <textarea name="message" required placeholder="Your Message or Service Needed" rows="5"></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <p>
-        📍 46B Tos Benson Road, Ebute-Ipakodo, Ikorodu, Lagos State <br />
-        📧 nextgeneducationalsolutions@gmail.com <br />
-        ☎ ‪+2347065520223‬ | ‪+2348026279249‬
-      </p>
-    </div>
-  </section>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Transforming Education <br><span class="highlight">One School at a Time</span></h1>
+            <p>Professional support for schools, educators, and institutions to thrive, evolve, and achieve excellence.</p>
+            <a href="#contact" class="btn btn-cta">Book a Consultation</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-school icon"></i>
+                    <h3>School Management & Operations</h3>
+                    <p>Streamlining administrative processes, structural workflows, and daily operations for maximum efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-chalkboard-user icon"></i>
+                    <h3>Staff Training & Development</h3>
+                    <p>Empowering educators with contemporary teaching methodologies, modern tools, and leadership skills.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-book-open icon"></i>
+                    <h3>Curriculum Planning & Coaching</h3>
+                    <p>Designing robust, future-proof curricula and setting standards for measurable academic benchmarking.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-chart-line icon"></i>
+                    <h3>Financial & Strategic Consulting</h3>
+                    <p>Providing reliable scaling roadmaps, financial budgeting, and sustainable growth plans.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-people-roof icon"></i>
+                    <h3>Parents Engagement Models</h3>
+                    <p>Building collaborative bridges between the home and the school to foster overall student success.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-globe icon"></i>
+                    <h3>Digital Branding & Web Setup</h3>
+                    <p>Crafting unique digital footprints for institutions, including responsive website deployments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <h2>About Us</h2>
+            <p>We are a team of seasoned educators and consultants with over <strong>20 years of hands-on experience</strong> helping schools grow, improve outcomes, and strengthen management systems.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <p>Request a service or consultation. We'd love to hear from you!</p>
+    
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+        </div>
+        
+        <p id="response" style="margin-bottom: 15px; font-weight: 600; min-height: 24px;"></p>
+        
+        <button type="submit" class="btn btn-submit">Send Message</button>
+    </form>
+</div>
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>46B Tos Benson Road, Ebute-Ipakodo, Ikorodu, Lagos State</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:nextgeneducationalsolutions@gmail.com">nextgeneducationalsolutions@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+234 706 552 0223 | +234 802 627 9249</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NextGen Edu Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<!-- The stray comment and file reference have been removed. The HTML is already wrapped with a single root <html> element, so no further changes are needed. -->
-
-
+</html>

@@ -1,5 +1,6 @@
 // Add event listener for contact form submission only once
 const contactForm = document.getElementById("contact-form");
+
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -10,13 +11,13 @@ if (contactForm) {
     const response = document.getElementById("response");
 
     if (name === "" || email === "" || message === "") {
-      response.style.color = "red";
+      response.style.color = "#ef4444"; // Modern clean red
       response.textContent = "Please fill out all fields.";
       return;
     }
 
     // Simulate sending the message
-    response.style.color = "green";
+    response.style.color = "#10b981"; // Modern clean green
     response.textContent = `Thank you, ${name}! Your message has been received.`;
 
     // Clear the form fields
@@ -28,16 +29,16 @@ if (contactForm) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
+    const targetId = this.getAttribute("href");
+    
+    // Ignore empty hashes
+    if (targetId === "#") return;
+    
+    const target = document.querySelector(targetId);
     if (target) {
       target.scrollIntoView({
         behavior: "smooth"
       });
     }
   });
-/*
-  Only the contact form submission event listener is necessary for this script.
-  Removed other event listeners for clarity and to avoid duplication.
-*/
-
-// No additional event listeners needed.
+});
